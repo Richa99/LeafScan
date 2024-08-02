@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".disease_detection"
+    android:background="@drawable/bg_1"
+    >
+
+
+    <ImageView
+        android:id="@+id/image_iv"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/border_image"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/upload_bg_img"
+
+        >
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/predclass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="312dp"
+        android:textAlignment="center"
+        android:text="@string/image_display"
+        android:textSize="15dp"
+        android:textColor="#929595"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/capture_btn"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="612dp"
+        android:textStyle="bold"
+        android:text="@string/capture"
+        android:drawableRight="@drawable/baseline_camera_alt_24"
+        android:textColor="#605A6E"
+        android:background="@drawable/capture_btn_bg"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:elevation="20dp"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/upload_btn"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="612dp"
+        android:text="@string/upload_image"
+        android:drawableRight="@drawable/baseline_cloud_upload_24"
+        android:textColor="#605A6E"
+        android:textStyle="bold"
+        android:background="@drawable/capture_btn_bg"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:elevation="20dp"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Results_btn"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/results"
+        android:drawableRight="@drawable/results_icon_size"
+        android:textAllCaps="false"
+        android:background="@drawable/results_btn_bg"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_iv">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="192dp"
+        android:alpha="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/leaf_bg">
+
+    </ImageView>
+
+    <!--    <Button-->
+<!--        android:id="@+id/capture_btn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="612dp"-->
+<!--        android:text="Capture"-->
+<!--        android:drawableEnd="@drawable/baseline_camera_alt_24"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/teal_700"-->
+<!--        android:background="@drawable/capture_btn_bg"-->
+<!--        app:backgroundTint="@android:color/transparent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.146"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--    </Button>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/upload_btn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="612dp"-->
+<!--        android:backgroundTint="@android:color/transparent"-->
+<!--        android:text="Upload Image"-->
+<!--        android:drawableEnd="@drawable/baseline_cloud_upload_24"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/teal_700"-->
+<!--        android:background="@drawable/capture_btn_bg"-->
+<!--        app:backgroundTint="@color/white"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.873"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--    </Button>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/Results_btn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="72dp"-->
+<!--        android:backgroundTint="@android:color/transparent"-->
+<!--        android:text="Results"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/teal_700"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/image_iv">-->
+
+<!--    </Button>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

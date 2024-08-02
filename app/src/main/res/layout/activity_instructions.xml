@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Instructions_activity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="293dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginLeft="70dp"
+        app:srcCompat="@drawable/boy_clicking_photo_with_camera" />
+
+    <TextView
+        android:id="@+id/instn_titl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instructions"
+        android:textSize="30dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#FCC8A7EF"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/instn_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instruction_text"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textSize="12dp"
+        android:justificationMode="inter_word"
+        android:layout_marginBottom="30dp"
+        android:textColor="#929595"
+        >
+
+    </TextView>
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_200"
+        android:background="@drawable/instn_tv_bg"
+        android:drawableRight="@drawable/baseline_navigate_next_24"
+        android:text="@string/go"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="300dp"
+        android:elevation="10dp"
+        android:layout_gravity="bottom"
+        >
+
+
+    </Button>
+
+
+
+
+</LinearLayout>

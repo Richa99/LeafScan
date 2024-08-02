@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:id="@+id/intro_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intro_text"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="15sp"
+        android:justificationMode="inter_word"
+        android:fontFamily=""
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="38dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/use_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/Use"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/Use_text_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="15sp"
+        android:justificationMode="inter_word"
+        android:text="@string/Use_text"
+        >
+    </TextView>
+
+        <ImageView
+            android:id="@+id/leaf_bg_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/leaf_bg"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="188dp">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+       android:layout_width="match_parent"
+       android:layout_height="120dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent">
+
+       <com.google.android.material.bottomappbar.BottomAppBar
+           android:id="@+id/bottomAppbar"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:backgroundTint="@color/purple_200"
+           app:fabCradleMargin="10dp"
+           app:fabCradleRoundedCornerRadius="50dp"
+           android:layout_gravity="bottom">
+
+           <com.google.android.material.bottomnavigation.BottomNavigationView
+               android:id="@+id/bottom_navigation"
+               android:layout_width="match_parent"
+               android:layout_height="75dp"
+               android:layout_marginEnd="20dp"
+               app:menu="@menu/bottom_menu"
+               app:labelVisibilityMode="labeled"
+               app:itemIconTint="@color/white"
+               app:itemTextColor="@color/white"
+               android:background="@android:color/transparent"
+               app:elevation="0dp"
+               />
+
+       </com.google.android.material.bottomappbar.BottomAppBar>
+
+       <com.google.android.material.floatingactionbutton.FloatingActionButton
+           android:id="@+id/fab_btn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:layout_anchor="@id/bottomAppbar"
+           android:src="@drawable/baseline_camera_alt_24"
+           app:maxImageSize="30dp"
+           app:backgroundTint="#ECE5E2"
+           >
+
+       </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+   </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

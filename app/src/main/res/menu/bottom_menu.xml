@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Contact"
+        android:icon="@drawable/baseline_contact_mail_24"
+        android:title="@string/Contact"
+        >
+    </item>
+    <item
+        android:enabled="false"
+        android:title=""
+        >
+    </item>
+    <item
+        android:id="@+id/Lang_toggle"
+        android:icon="@drawable/baseline_language_24"
+        android:title="@string/lang_toggle"
+        >
+<!--        <menu>-->
+<!--            <item-->
+<!--            android:id="@+id/eng"-->
+<!--            android:title="@string/english"-->
+<!--            >-->
+<!--            </item>-->
+<!--            <item-->
+<!--                android:id="@+id/hin"-->
+<!--                android:title="@string/hindi"-->
+<!--            >-->
+<!--            </item>-->
+<!--            <item-->
+<!--                android:id="@+id/pun"-->
+<!--                android:title="@string/punjabi"-->
+<!--                >-->
+<!--            </item>-->
+
+<!--        </menu>-->
+    </item>
+</menu>
